@@ -28,8 +28,10 @@ const Sidebar = ({ user, onLogout }) => {
   return (
     <>
       <nav>
-        <button className="sidebar-toggle" onClick={() => setIsCollapsed(true)}>
-          |||
+        <button class="sidebar-toggle" onClick={() => setIsCollapsed(true)}>
+          <div class="hamburger-line line1"></div>
+          <div class="hamburger-line line2"></div>
+          <div class="hamburger-line line3"></div>
         </button>
       </nav>
       <aside
@@ -55,9 +57,11 @@ const Sidebar = ({ user, onLogout }) => {
             </p>
           </Link>
         </div>
-        <div className="sidebarItems" onClick={onLogout}>
-          <Link to="/login">{user ? "Sign Out" : "Sign In"}</Link>
-          <p>{user ? user : ""}</p>
+        <div className="sidebarItems">
+          <div onClick={onLogout}>
+            <Link to="/login">{user ? "Sign Out" : "Sign In"}</Link>
+          </div>
+          <p style={{ userSelect: "none" }}>{user ? user : ""}</p>
         </div>
       </aside>
     </>

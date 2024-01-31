@@ -1,7 +1,7 @@
 import { useEffect } from "react";
 import { Outlet, useLocation } from "react-router-dom";
 import Sidebar from "./SideBar/SideBar";
-import { selectCurrentUser, setCredentials } from "../features/auth/authSlice";
+import { selectCurrentUser, logOut } from "../features/auth/authSlice";
 import { useDispatch, useSelector } from "react-redux";
 import Footer from "./Footer";
 
@@ -20,7 +20,7 @@ const AuthorizedApp = () => {
         <Sidebar
           user={user}
           onLogout={() => {
-            dispatch(setCredentials({}));
+            dispatch(logOut());
             localStorage.removeItem("auth");
           }}
         />

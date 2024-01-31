@@ -43,3 +43,21 @@ aside.visible {
 .sidebarItems p.active {
   color: #007bff;
 }
+
+.sidebar-toggle {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 5px;
+  margin: 0;
+}
+
+.hamburger-line {
+  width: 30px;
+  height: 3px;
+  background-color: white;
+  margin: 5px 0;
+  transition: 0.4s;
+}

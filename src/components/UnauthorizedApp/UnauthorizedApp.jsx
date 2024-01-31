@@ -2,8 +2,8 @@ import { useRef, useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 
 import { useDispatch } from "react-redux";
-import { setCredentials } from "./authSlice";
-import { useLoginMutation } from "./authApiSlice";
+import { setCredentials } from "../../features/auth/authSlice";
+import { useLoginMutation } from "../../features/auth/authApiSlice";
 import styles from "./UnauthorizedApp.module.css"; // Import the module stylesheet
 
 const UnauthorizedApp = () => {

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const proverbs = [
   "The early bird catches the worm.",
