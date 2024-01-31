@@ -37,7 +37,6 @@ const UnauthorizedApp = () => {
       setPwd("");
 
       if (response?.error) {
-        console.log("response.error", response.error);
         setErrMsg(response?.error);
       } else {
         navigate("/home");

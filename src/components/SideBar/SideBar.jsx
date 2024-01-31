@@ -24,14 +24,14 @@ const Sidebar = ({ user, onLogout }) => {
       document.removeEventListener("click", handler);
     };
   });
-  console.log(location.pathname, "location.pathname");
+
   return (
     <>
       <nav>
-        <button class="sidebar-toggle" onClick={() => setIsCollapsed(true)}>
-          <div class="hamburger-line line1"></div>
-          <div class="hamburger-line line2"></div>
-          <div class="hamburger-line line3"></div>
+        <button className="sidebar-toggle" onClick={() => setIsCollapsed(true)}>
+          <div className="hamburger-line line1"></div>
+          <div className="hamburger-line line2"></div>
+          <div className="hamburger-line line3"></div>
         </button>
       </nav>
       <aside

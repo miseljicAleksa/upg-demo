@@ -22,7 +22,7 @@
 .input {
   padding: 10px;
   font-size: 16px;
-  border: 1px solid #ced4da; /* Light Gray */
+  border: 1px solid #ced4da;
   border-radius: 4px;
   margin-right: 10px;
 }
@@ -30,7 +30,7 @@
 .submit {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #007bff; /* Blue */
+  background-color: #007bff;
   color: #fff;
   border: none;
   border-radius: 4px;
@@ -41,7 +41,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f8f9fa; /* Light Gray */
+  background-color: #f8f9fa;
   padding: 10px;
   margin-bottom: 10px;
   border-radius: 4px;
@@ -52,9 +52,9 @@
   color: #152856;
 }
 
-.article-completed label {
+.articleCompleted label {
   text-decoration: line-through;
-  color: #6c757d; /* Gray */
+  color: #6c757d;
 }
 
 .todo {
@@ -68,11 +68,11 @@
 
 .completed {
   text-decoration: line-through;
-  color: #6c757d; /* Gray */
+  color: #6c757d;
 }
 
 .trash {
-  background-color: #dc3545; /* Red */
+  background-color: #dc3545;
   color: #fff;
   border: none;
   padding: 8px 15px;

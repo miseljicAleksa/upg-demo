@@ -3,7 +3,7 @@ import {
   useUpdateTodoMutation,
   useDeleteTodoMutation,
   useAddTodoMutation,
-} from "../../app/api/apiSlice";
+} from "./todoApiSlice";
 import { useState } from "react";
 import styles from "./TodoList.module.css"; // Import the module stylesheet
 
@@ -19,7 +19,7 @@ const TodoList = () => {
     isError,
     error,
   } = useGetTodosQuery();
-  console.log(error, "error");
+
   const [addTodo] = useAddTodoMutation();
   const [updateTodo] = useUpdateTodoMutation();
   const [deleteTodo] = useDeleteTodoMutation();
