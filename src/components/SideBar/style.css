@@ -1,0 +1,45 @@
+nav {
+  display: flex;
+  justify-content: end;
+}
+
+aside {
+  position: fixed;
+  min-width: 400px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  padding: 10px;
+  background-color: rgb(237, 237, 167);
+  transform: translateX(100%);
+  transition: 0.15s ease transform;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+aside.visible {
+  transform: translateX(0);
+}
+
+.sidebarItems {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.sidebarItems a {
+  text-decoration: none;
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+.sidebarItems p:hover {
+  color: #007bff;
+}
+
+.sidebarItems p.active {
+  color: #007bff;
+}
